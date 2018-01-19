@@ -6,6 +6,11 @@ Information Commands:
 
 Shitpost Commands:
 !checkem - See if you're lucky enough to get doubles.
+!currentyear <args> - I can't believe you're doing that in the current year
+
+Fun Commands:
+!flip - A basic coin flip. Heads or tails.
+!palindrome  <arg> - checks if the word is a palindrome.
 
 Owner Commands:
 !kill - kills the bot
