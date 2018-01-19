@@ -13,5 +13,11 @@ namespace Shinobu.Modules
             string number =  new Random().Next(100000000, 999999999).ToString();
             await ReplyAsync("Check em!" + "\n" + "Your number: " + number);
         }
+
+        [Command("currentyear")]
+        public async Task CurrentYear(params string[] args)
+        {
+            await ReplyAsync(">" + string.Join(" ", args) + " in the current year");
+        }
     }
 }
