@@ -1,0 +1,11 @@
+ShinobuBot .NET Edition
+
+Information Commands:
+!about - get information about the bot
+!help - you get this page
+
+Shitpost Commands:
+!checkem - See if you're lucky enough to get doubles.
+
+Owner Commands:
+!kill - kills the bot
