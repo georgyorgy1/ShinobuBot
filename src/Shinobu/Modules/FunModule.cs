@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Discord.Commands;
+using Discord.WebSocket;
 using Shinobu.Services;
 
 namespace Shinobu.Modules
@@ -42,6 +43,12 @@ namespace Shinobu.Modules
             {
                 await ReplyAsync("It's not a palindrome");
             }
+        }
+
+        [Command("ping")]
+        public async Task Ping()
+        {
+            await ReplyAsync($"Pong! Your latency is: {(Context.Client as DiscordSocketClient).Latency} ms :ping_pong:");
         }
     }
 }
