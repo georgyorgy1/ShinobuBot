@@ -18,5 +18,16 @@ namespace Shinobu.Modules
                 Environment.Exit(0);
             }
         }
+
+        [Command("mindtrick")]
+        public async Task MindTrick(/*ulong channelId, */params string[] args)
+        {
+            if (Context.User.Id.ToString() == new JsonStringService().BuildConfig()["owner"])
+            {
+                string reply = string.Join(" ", args);
+                //await Context.Channel.SendMessageAsync(); 
+                await ReplyAsync(reply);
+            }
+        }
     }
 }
