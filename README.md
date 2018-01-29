@@ -1,5 +1,7 @@
 # ShinobuBot
 
+Latest Build: 20180129-1024
+
 ShinobuBot is a cute Discord Bot written in C# using the Discord.NET Library. Originally intended to be a Java based bot.
 
 Requirements:
