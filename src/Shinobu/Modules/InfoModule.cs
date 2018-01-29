@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Discord.Commands;
 using Shinobu.Services;
@@ -10,12 +11,20 @@ namespace Shinobu.Modules
         [Command("about")]
         public async Task About() 
         {
-            string botName = "ShinobuBot .NET Edition" + "\n";
+            //Get current memory usage
+            Process currentProcess = Process.GetCurrentProcess();
+            float memory = (float) currentProcess.WorkingSet64 / 1048576;
+
+            //put actual information
+            string botName = "ShinobuBot" + "\n";
             string author = "Author: Darth Squidward" + "\n";
             string buildString = "Build: " + new JsonStringService().BuildConfig()["build"] + "\n";
             string dotNetVersion = "DotNET Version: " + Environment.Version.ToString() + "\n";
+            string memoryUsage = "Memory: " + memory.ToString("0.00") + " MB" + "\n";
             string shard = "Shard: What the bloody hell is a shard?";
-            string finalString = botName + author + buildString + dotNetVersion + shard;
+
+            //Send message
+            string finalString = botName + author + buildString + dotNetVersion + memoryUsage + shard;
             await ReplyAsync(finalString);
         }
 

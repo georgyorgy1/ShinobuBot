@@ -8,7 +8,7 @@ namespace Shinobu.Modules
     public class ShitpostModule : ModuleBase<SocketCommandContext>
     {
         [Command("checkem")]
-        public async Task CheckEm() 
+        public async Task CheckEm(params string[] args) 
         {
             string number =  new Random().Next(100000000, 999999999).ToString();
             await ReplyAsync("Check em!" + "\n" + "Your number: " + number);
