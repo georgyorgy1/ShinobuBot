@@ -5,10 +5,8 @@ Latest Build: 20180129-1024
 ShinobuBot is a cute Discord Bot written in C# using the Discord.NET Library. Originally intended to be a Java based bot.
 
 Requirements:
-
-.NET Core 2.0
-
-Discord.NET
+- .NET Core 2.0
+- Discord.NET
 
 Installation:
 1. Go to /src/Shinobu/Files and then open config.json
