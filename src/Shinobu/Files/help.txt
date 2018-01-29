@@ -11,6 +11,12 @@ Shitpost Commands:
 Fun Commands:
 !flip - A basic coin flip. Heads or tails.
 !palindrome  <arg> - checks if the word is a palindrome.
+!ping - pong!
+
+Mathematics Commands:
+!random - generate a random number
+!add <args> - adds multiple numbers
 
 Owner Commands:
 !kill - kills the bot
+!mindtrick <channel ID> <args> - "This is not the command you are looking for."
